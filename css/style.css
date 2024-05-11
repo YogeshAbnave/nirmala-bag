@@ -1,37 +1,3 @@
-/*================
- Template Name: ProLex Product Landing Page Template
- Description: ProLex is app and product landing page template.
- Version: 1.0
- Author: https://themeforest.net/user/themetags
-=======================*/
-
-/*TABLE OF CONTENTS*/
-
-/*=====================
-01. RESET CSS
-02. BASE TYPOGRAPHY
-03. PRE DEFINE CLASS CSS
-04. HEADER CSS
-05. HERO SECTION CSS
-06. PROMO SECTION CSS
-07. ABOUT US CSS
-08. FEATURE SECTION CSS
-09. VIDEO PROMO CSS
-10. COUNTER CSS
-11. FAQ CSS
-12. TESTIMONIAL CSS
-13. CONTACT FORM CSS
-14. FOOTER CSS
-=======================*/
-
-/* -----------------------------------------
-			   01. RESET CSS
--------------------------------------------- */
-
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 html,
 body,
@@ -173,6 +139,28 @@ html {
 /* -----------------------------------------
            02. BASE TYPOGRAPHY
 -------------------------------------------- */
+
+@font-face {
+    font-family: 'urbancat';
+    src: url('../fonts/urbancat/VladB - Urbancat Rg Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo-font {
+    color: #000;
+    font-size: 30px;
+    font-family: 'urbancat';
+}
+
+.logo-font span{
+    color: #ed1c24;
+}
+
+.footer-nav-wrap .logo-font{
+    color: #fff;
+    margin-bottom: 20px;
+}
 
 body,
 h1,
@@ -401,10 +389,26 @@ b {
     border-color: #01020c;
 }
 
+.header .secondary-btn {
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+    color: #ed1c24;
+    height: max-content;
+    margin: 10px;
+}
+
+.affix .secondary-btn {
+    background: #ed1c24;
+    border-color: #ed1c24;
+    color: #ffffff;
+    height: max-content;
+}
+
 .secondary-btn {
     background: #ed1c24;
     border-color: #ed1c24;
     color: #ffffff;
+    height: max-content;
 }
 
 .secondary-btn:hover {
@@ -457,14 +461,15 @@ b {
 }
 
 .google-play-btn {
-    background: #ffffff;
-    border-color: #ffffff;
-    color: #01020c;
+    background: #ed1c24;
+    border-color: #ed1c24;
+    color: #FFFFFF;
     border-radius: 30px;
 }
 
 .google-play-btn:hover {
     background: transparent;
+    border-color: #FFFFFF;
     color: #ffffff;
 }
 
@@ -677,8 +682,7 @@ select.form-control.has-value {
 }
 
 .custom-nav ul li a {
-    color: #fafafa;
-    opacity: 0.8;
+    color: #FFFFFF;
 }
 
 .main-menu ul li a.active {
@@ -700,7 +704,7 @@ select.form-control.has-value {
 }
 
 .white-bg.affix ul li a {
-    color: #081d43 !important;
+    color: #000000 !important;
     opacity: 0.8;
 }
 
@@ -731,40 +735,50 @@ select.form-control.has-value {
         background: #01020c !important;
         padding: .95rem 1rem;
     }
+
     .white-bg.affix,
     .custom-nav.affix,
     .navbar.white-bg {
         background: #ffffff !important;
         border-bottom: 1px solid #ebebeb;
     }
+
     .white-bg.custom-nav ul li a,
     .custom-nav ul li a {
         color: #081d43 !important;
     }
+
     .white-bg.navbar .navbar-toggler span {
         color: #202877;
     }
+
     .main-menu ul>li .submenu {
         left: 0;
         top: 10px;
         position: relative;
     }
+
     .main-menu ul li {
         padding: 15px 0 0;
     }
+
     .main-menu ul>li a {
         margin: 0;
     }
+
     .main-menu ul>li .submenu:before,
     .main-menu ul>li .submenu:after {
         left: 15px;
     }
+
     .ptb-100 {
         padding: 55px 0;
     }
+
     .pt-100 {
         padding-top: 55px;
     }
+
     .pb-100 {
         padding-bottom: 55px;
     }
@@ -809,137 +823,166 @@ select.form-control.has-value {
         display: block;
         width: 100%;
     }
+
     .animation-one {
         -webkit-animation: move-one 7s ease-in-out infinite;
         animation: move-one 7s ease-in-out infinite;
     }
+
     @keyframes move-one {
         0% {
             -webkit-transform: translateX(0) translateY(5px);
             transform: translateX(0) translateY(5px)
         }
+
         50% {
             -webkit-transform: translateX(0) translateY(-5px);
             transform: translateX(0) translateY(-5px)
         }
+
         100% {
             -webkit-transform: translateX(0) translateY(5px);
             transform: translateX(0) translateY(5px)
         }
     }
+
     @-webkit-keyframes move-one {
         0% {
             -webkit-transform: translateX(0) translateY(5px);
             transform: translateX(0) translateY(5px)
         }
+
         50% {
             -webkit-transform: translateX(0) translateY(-5px);
             transform: translateX(0) translateY(-5px)
         }
+
         100% {
             -webkit-transform: translateX(0) translateY(5px);
             transform: translateX(0) translateY(5px)
         }
     }
+
     .animation-two {
         position: absolute;
         bottom: -10px;
         -webkit-animation: move-two 8s ease-in-out infinite;
         animation: move-two 8s ease-in-out infinite;
     }
+
     @-webkit-keyframes move-two {
         0% {
             -webkit-transform: translateX(-25px) translateY(-225px);
             transform: translateX(-25px) translateY(-225px)
         }
+
         50% {
             -webkit-transform: translateX(-25px) translateY(-205px);
             transform: translateX(-25px) translateY(-205px)
         }
+
         100% {
             -webkit-transform: translateX(-25px) translateY(-225px);
             transform: translateX(-25px) translateY(-225px)
         }
     }
+
     @keyframes move-two {
         0% {
             -webkit-transform: translateX(-25px) translateY(-225px);
             transform: translateX(-25px) translateY(-225px)
         }
+
         50% {
             -webkit-transform: translateX(-25px) translateY(-205px);
             transform: translateX(-25px) translateY(-205px)
         }
+
         100% {
             -webkit-transform: translateX(-25px) translateY(-225px);
             transform: translateX(-25px) translateY(-225px)
         }
     }
+
     .animation-three {
         position: absolute;
         -webkit-animation: move-three 9s ease-in-out infinite;
         animation: move-three 9s ease-in-out infinite
     }
+
     @-webkit-keyframes move-three {
         0% {
             -webkit-transform: translateX(-45px) translateY(-225px);
             transform: translateX(-45px) translateY(-225px)
         }
+
         50% {
             -webkit-transform: translateX(-45px) translateY(-205px);
             transform: translateX(-45px) translateY(-205px)
         }
+
         100% {
             -webkit-transform: translateX(-45px) translateY(-225px);
             transform: translateX(-45px) translateY(-225px)
         }
     }
+
     @keyframes move-three {
         0% {
             -webkit-transform: translateX(-45px) translateY(-225px);
             transform: translateX(-45px) translateY(-225px)
         }
+
         50% {
             -webkit-transform: translateX(-45px) translateY(-205px);
             transform: translateX(-45px) translateY(-205px)
         }
+
         100% {
             -webkit-transform: translateX(-45px) translateY(-225px);
             transform: translateX(-45px) translateY(-225px)
         }
     }
+
     .animation-four {
         position: absolute;
         -webkit-animation: move-four 6s ease-in-out infinite;
         animation: move-four 6s ease-in-out infinite
     }
+
     .animation-new {
         position: absolute;
         bottom: 10px;
     }
+
     @-webkit-keyframes move-four {
         0% {
             -webkit-transform: translateX(330px) translateY(-215px);
             transform: translateX(330px) translateY(-215px)
         }
+
         50% {
             -webkit-transform: translateX(330px) translateY(-240px);
             transform: translateX(330px) translateY(-240px)
         }
+
         100% {
             -webkit-transform: translateX(330px) translateY(-215px);
             transform: translateX(330px) translateY(-215px)
         }
     }
+
     @keyframes move-four {
         0% {
             -webkit-transform: translateX(330px) translateY(-215px);
             transform: translateX(330px) translateY(-215px)
         }
+
         50% {
             -webkit-transform: translateX(330px) translateY(-240px);
             transform: translateX(330px) translateY(-240px)
         }
+
         100% {
             -webkit-transform: translateX(330px) translateY(-215px);
             transform: translateX(330px) translateY(-215px)
@@ -948,6 +991,7 @@ select.form-control.has-value {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
     .animation-four,
     .animation-new {
         display: none !important;
@@ -1093,10 +1137,12 @@ select.form-control.has-value {
         left: 0px;
         top: 0px
     }
+
     50% {
         left: 0;
         top: 800px
     }
+
     100% {
         left: 0px;
         top: 0px
@@ -1108,10 +1154,12 @@ select.form-control.has-value {
         left: 800px;
         top: 0px
     }
+
     50% {
         left: 0px;
         top: 800px
     }
+
     100% {
         left: 800px;
         top: 0px
@@ -1123,10 +1171,12 @@ select.form-control.has-value {
         left: 0;
         top: 100px
     }
+
     50% {
         left: 0;
         top: 800px
     }
+
     100% {
         left: 0;
         top: 100px
@@ -1138,10 +1188,12 @@ select.form-control.has-value {
         left: 0;
         top: 100px
     }
+
     50% {
         left: 0px;
         top: 800px
     }
+
     100% {
         left: 0;
         top: 100px
@@ -1153,10 +1205,12 @@ select.form-control.has-value {
         left: 300px;
         top: 900px
     }
+
     50% {
         left: 500px;
         top: 0px
     }
+
     100% {
         left: 300px;
         top: 900px
@@ -1168,10 +1222,12 @@ select.form-control.has-value {
         left: 300px;
         top: 900px
     }
+
     50% {
         left: 500px;
         top: 0px
     }
+
     100% {
         left: 300px;
         top: 900px
@@ -1183,10 +1239,12 @@ select.form-control.has-value {
         left: 1000px;
         top: 500px
     }
+
     50% {
         left: 00px;
         top: 500px
     }
+
     100% {
         left: 1000px;
         top: 500px
@@ -1198,10 +1256,12 @@ select.form-control.has-value {
         left: 1000px;
         top: 500px
     }
+
     50% {
         left: 0px;
         top: 500px
     }
+
     100% {
         left: 1000px;
         top: 500px
@@ -1213,10 +1273,12 @@ select.form-control.has-value {
         left: 500px;
         top: 1000px
     }
+
     50% {
         left: 50%;
         top: 0px
     }
+
     100% {
         left: 500px;
         top: 1000px
@@ -1228,10 +1290,12 @@ select.form-control.has-value {
         left: 500px;
         top: 1000px
     }
+
     50% {
         left: 50%;
         top: 0px
     }
+
     100% {
         left: 500px;
         top: 1000px
@@ -1243,10 +1307,12 @@ select.form-control.has-value {
         left: 500px;
         top: 200px
     }
+
     50% {
         left: 50%;
         top: 70%
     }
+
     100% {
         left: 500px;
         top: 200px
@@ -1258,10 +1324,12 @@ select.form-control.has-value {
         left: 500px;
         top: 200px
     }
+
     50% {
         left: 50%;
         top: 70%
     }
+
     100% {
         left: 500px;
         top: 200px
@@ -1273,10 +1341,12 @@ select.form-control.has-value {
         left: 50px;
         top: 10%
     }
+
     50% {
         left: 50%;
         top: 10%
     }
+
     100% {
         left: 50px;
         top: 10%
@@ -1288,10 +1358,12 @@ select.form-control.has-value {
         left: 50px;
         top: 10%
     }
+
     50% {
         left: 50%;
         top: 10%
     }
+
     100% {
         left: 50px;
         top: 10%
@@ -1303,10 +1375,12 @@ select.form-control.has-value {
         left: 0;
         top: 20%
     }
+
     50% {
         left: 50%;
         top: 20%
     }
+
     100% {
         left: 0;
         top: 20%
@@ -1318,10 +1392,12 @@ select.form-control.has-value {
         left: 0;
         top: 20%
     }
+
     50% {
         left: 50%;
         top: 20%
     }
+
     100% {
         left: 0;
         top: 20%
@@ -1333,10 +1409,12 @@ select.form-control.has-value {
         left: 1000px;
         top: 100px
     }
+
     50% {
         left: 500px;
         top: 950px
     }
+
     100% {
         left: 1000px;
         top: 100px
@@ -1348,10 +1426,12 @@ select.form-control.has-value {
         left: 1000px;
         top: 100px
     }
+
     50% {
         left: 500px;
         top: 950px
     }
+
     100% {
         left: 1000px;
         top: 100px
@@ -1544,6 +1624,7 @@ select.form-control.has-value {
         padding-top: 55px;
         padding-bottom: 0;
     }
+
     .hero-section-4 .hero-bg-inner {
         transform: none;
     }
@@ -1792,13 +1873,45 @@ select.form-control.has-value {
     padding: 0;
 }
 
+.about-content-right {
+    width: 100%;
+    border-radius: 15px;
+    height: 465px;
+    background-image: url('../img/latop_bag1.webp');
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.about-content-right:hover {
+    background-image: url('../img/laptop_bag2.webp');
+    transition: 0.5s;
+}
+
+.travel-bag-box {
+    width: 100%;
+    height: 300px;
+    background-image: url('../img/travel_bag2.webp');
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.travel-bag-box:hover {
+    background-image: url('../img/travel_bag1.webp');
+    transition: 0.5s;
+}
+
+.collge-bag-holder:hover {
+    background-image: url('../img/college_bag2.webp') !important;
+    transition: 0.5s;
+}
+
 .background-image-holder {
     position: absolute;
     height: 100%;
     top: 0;
     left: 0;
     background-size: cover !important;
-    background-position: 50% 50% !important;
+    background-position: 100% 50% !important;
     z-index: 0;
     transition: opacity .3s linear;
     -webkit-transition: opacity .3s linear;
@@ -1853,6 +1966,7 @@ select.form-control.has-value {
     .switchable .container>.row {
         flex-flow: row-reverse;
     }
+
     .switchable.switchable-content .container>.row {
         flex-flow: row;
     }
@@ -1947,10 +2061,12 @@ select.form-control.has-value {
         width: 90%;
         margin: 0 5%;
     }
+
     50% {
         width: 60%;
         margin: 0 18%;
     }
+
     100% {
         width: 90%;
         margin: 0 5%;
@@ -2411,6 +2527,7 @@ select.form-control.has-value {
         -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1)
     }
+
     100% {
         -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 30px rgba(255, 255, 255, 0);
         box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 30px rgba(255, 255, 255, 0)
@@ -2422,6 +2539,7 @@ select.form-control.has-value {
         -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1)
     }
+
     100% {
         -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 30px rgba(255, 255, 255, 0);
         box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 30px rgba(255, 255, 255, 0)
@@ -2940,4 +3058,20 @@ blockquote:before {
 .copyright-text a {
     color: #ed1c24;
     opacity: 0.9;
+}
+
+
+
+.float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    height: 60px;
+    width: 60px;
+}
+
+.my-float {
+    height: 60px;
+    width: 60px;
 }
